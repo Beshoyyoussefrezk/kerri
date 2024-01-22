@@ -1,0 +1,258 @@
+/* main color #e65f78 */
+.main-color{color: #e65f78;}
+/* common */
+.mrg-top{
+    margin-top: 8rem;
+}
+.pdng-y{
+    padding: 6rem 0;
+}
+.main-title p{
+    font-size: 1.1rem;
+}
+/* common */
+/* start header */
+.bg-navv{
+    background-color: rgba(0, 0, 0, 0.075) !important;
+    height: 10vh;
+}
+.mynav li .anc-active {
+    color: #e65f78 !important;
+}
+.mynav li a{
+    transition: color 1s !important;
+}
+.mynav li a:hover{
+    color: #e65f78 !important;
+}
+/* end header */
+/* start home */
+.img-home{
+    background-image: url('../images/headerabout/header-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+.layout{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.home-content h1{
+    font-size: 2.5rem;
+    font-family: 'Acme', sans-serif;
+    font-weight: bolder;
+}
+.home-content p{
+    font-size: 1.1rem;
+    letter-spacing: .8px;
+}
+.home-content a{
+    transition: background-color .5s , color .5s;
+}
+.home-content a:hover{
+    color: #000000 !important;
+    background-color: #fff;
+}
+.home-content h1::after{
+    content: "|";
+    color: #e65f78;
+    font-family: 'Acme', sans-serif;
+    font-weight: bolder;
+    animation: typing infinite 8s ;
+}
+@keyframes typing{
+    0%{content: " w|";}
+    2.5%{content: "we|";}
+    5%{content: "web|";}
+    7.5%{content: "web d|";}
+    10%{content: "web de|";}
+    12.5%{content: "web des|";}
+    15%{content: "web desi|";}
+    17.5%{content: "web desig|";}
+    20%{content: "web designe|";}
+    22.5%{content: "web designer|";}
+    25%{content: "web designer|";}
+    27.5%{content: "web designer|";}
+    30%{content: "web designer|";}    
+    32.5%{content: "web designe|";}
+    35%{content: "web design|";}
+    37.5%{content: "web desig|";}
+    40%{content: "web desi|";}
+    42.5%{content: "web des|";}
+    45%{content: "web de|";}
+    47.5%{content: "web dev|";}
+    50%{content: "web deve|";}
+    52.5%{content: "web devel|";}
+    55%{content: "web develo|";}
+    57.5%{content: "web develop|";}
+    60%{content: "web develope|";}
+    62.5%{content: "web developer|";}
+    65%{content: "web developer|";}
+    67.5%{content: "web developer|";}
+    70%{content: "web developer|";}
+    72.5%{content: "web develope|";}
+    75%{content: "web develop|";}
+    77.5%{content: "web develo|";}
+    80%{content: "web devel|";}
+    82.5%{content: "web deve|";}
+    85%{content: "web dev|";}
+    87.5%{content: "web de|";}
+    90%{content: "web d|";}
+    92.5%{content: "we";}
+    95%{content: "w|";}
+    97.5%{content: "|";}
+    100%{content: "|";}
+}
+.parent-mouse{
+    transform: translateY(220%);
+}
+.mouse{
+    width: 2rem;
+    height: 4rem;
+    border: 2px solid white;
+    position: relative;
+    bottom: 20px;
+    animation: updown .6s infinite;
+}
+.mouse::after{
+    content: "";
+    width: 3px;
+    height: 15px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 65%;
+    right: 44%;
+}
+@keyframes updown{
+    0%{bottom: 0px;}
+    50%{bottom: 10px;}
+    100%{bottom: 0px;}
+}
+@media screen and (max-width:992px){
+    .parent-mouse{
+        transform: translateY(170%);
+    }
+    .mouse{
+        width: 2rem;
+        height: 4rem;
+        border: 2px solid white;
+    }
+    .home-content h1{
+        font-size: 1.5rem;
+        font-family: 'Saira Stencil One', cursive;
+    }
+    .home-content{
+        width: 85% !important;
+    }
+    .home-content p{
+        font-size: 1rem ;
+        margin-top: 1.5rem;
+    }
+}
+/* end home */
+/* start about */
+.about-content h3 span{
+    color: #e65f78;
+}
+.about-icon a i{
+    border: 2px solid #ddd;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    transition: color .5s , border-color .5s;
+}
+.about-icon a:hover i{
+    color: #e65f78 !important;
+    border-color: #e65f78;
+}
+/* end about */
+/* start services */
+.service-item {
+    border: 1px solid #dad7d8;
+}
+.service-item i{
+    color: #e65f78;
+    
+}
+.service-item .line{
+    width: 12%;
+    height: 2px;
+    background-color: #e65f78;
+    transition: transform 1s;
+}
+.service-item:hover .line{
+    transform: scaleX(1.4);
+}
+.service-item:hover i{
+    animation: check 1.2s;
+}
+@keyframes check{
+    0%{transform: rotate(22deg);}
+    25%{transform: rotate(45deg);}
+    50%{transform: rotate(22deg);}
+    75%{transform: rotate(45deg);}
+    100%{transform: rotate(0deg);}
+}
+/* end services */
+/* start hire */
+.hire h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Times New Roman', Times, serif, Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.hire a{
+    background-color: #e65f78;
+}
+/* end hire */
+/* start client */
+.client-content i{
+    color: #e65f78;
+}
+.client-content p{
+    font-size: 1.2rem;
+}
+.carousell{
+    bottom: -20% !important;
+}
+.carousell li{
+    background-color: #e65f78;
+    height: 0.3rem;
+    width: 3%;
+}
+/* end client */
+/* start works */
+.work-nav ul li {
+    list-style: none;
+}
+.work-nav ul li .active-work {
+    background-color: #e65f78;
+}
+.work-nav ul li a {
+    transition: background-color .7s , color .7s ;
+}
+.work-nav ul li a:hover {
+    background-color: #e65f78;
+    color: #fff !important;
+}
+.layout-work{
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 15;
+}
+/* end works */
+/* start contact */
+input:active{
+    border: 1px solid #e65f78;
+}
+
+/* end contact */
+@media only screen and (max-width: 991px){
+    .media-w85{
+        width: 85% !important;
+    }
+    .media-my{
+        margin: 1.5rem 0 !important;
+    }
+}
